@@ -1,0 +1,21 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.display {
+    background-color: rgba(0, 0, 255, 0.313);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+
+.btn {
+    font-size: 2em;
+    margin: 10px 20px;
+}
