@@ -13,7 +13,7 @@
     function iniciar() {
         intervalo = setInterval(function() {
             milisegundos++;
-            if (milisegundos === 1000) {
+            if (milisegundos === 100) {
                 milisegundos = 0;
                 segundos++;
             }
@@ -25,7 +25,7 @@
                 minutos = 0;
                 horas++;
             }
-            display.innerHTML = formatearTiempo(horas) + ':' + formatearTiempo(minutos) + ':' + formatearTiempo(segundos) + '.' + formatearMilisegundos(milisegundos);
+            display.innerHTML = formatearTiempo(horas) + ':' + formatearTiempo(minutos) + ':' + formatearTiempo(segundos) + '.' + formatearTiempo(milisegundos);
         }, 1);
     }
 
@@ -39,21 +39,11 @@
         minutos = 0;
         horas = 0;
         milisegundos = 0;
-        display.innerHTML = '00:00:00.000';
+        display.innerHTML = '00:00:00.00';
     }
 
     function formatearTiempo(tiempo) {
         return (tiempo < 10) ? '0' + tiempo : tiempo;
-    }
-
-    function formatearMilisegundos(tiempo) {
-        if (tiempo < 10) {
-            return '00' + tiempo;
-        } else if (tiempo < 100) {
-            return '0' + tiempo;
-        } else {
-            return tiempo;
-        }
     }
 
     iniciarBtn.addEventListener('click', () => {
