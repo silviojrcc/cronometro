@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
 body {
     min-height: 100vh;
     display: flex;
@@ -9,6 +12,7 @@ main {
 }
 
 .display {
+    font-family: 'VT323', monospace;
     background-color: rgba(0, 0, 255, 0.313);
     border-radius: 10px;
     transition: all 0.5s;
