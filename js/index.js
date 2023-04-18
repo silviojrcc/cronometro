@@ -26,7 +26,7 @@
                 horas++;
             }
             display.innerHTML = formatearTiempo(horas) + ':' + formatearTiempo(minutos) + ':' + formatearTiempo(segundos) + '.' + formatearTiempo(milisegundos);
-        }, 1);
+        }, 10);
     }
 
     function pausar() {
